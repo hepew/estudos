@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas ex011</h1>
+<hr>
+    <picture>
+        <!--Usar do menor para o maior ex. Imagem (P) para a Imagem (G)-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+       <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo audios</h1>
+    <p>Primeira maneira!</p>
+
+    <audio src="midia/London Bridge (instrumental) - The Green Orbs.mp3"  controls autoplay></audio> 
+
+            <!--Controls é para ter os botões de pause, o som, etc. O autoplay serve para você colocar o som instataneamente quando o site é carregado-->
+
+                                 <!-- Formatos compatíveis -> MP3; WAV; OGG. (não usar o Wav (é pesado)) -->
+
+    <p>Segunda maneira!</p>
+
+   <audio preload="metadata" autoplay controls loop>
+                     <!--Não usar o "auto"-->
+    <source src="midia/London Bridge (instrumental) - The Green Orbs.mp3" type="audio/mpeg">
+   </audio>
+
+                <!--*IMPORTANTE, Você tem que tirar o "scr" do audio e adicionar o "source: src"-->
+
+                <!--*IMPROTANTE, você tem que ter os media types de cada formato usado no audio, no audio que adicionei tem o MP3, o formtato dele é "audio/mpeg"-->
+                <p> <a href="midia/London Bridge (instrumental) - The Green Orbs.mp3">Clique para baixar o audio (MP3)</a></p>
+</body>
+</html>

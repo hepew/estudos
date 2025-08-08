@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+<style>
+  /*-header 
+    -nav
+    -main
+    -section
+    -article
+    -aside 
+    -footer*/
+body{
+    background-color: rgb(153, 152, 152);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+background-color: rgb(255, 255, 255);
+margin: 10px 3px;
+padding: 2px 10px 10px 10px;
+}
+header > nav{
+    background-color: rgb(184, 182, 182);
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.459);
+}
+
+nav > a{
+text-decoration: none;
+color: white;
+font-weight: bold;
+margin-right: 30px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+
+
+section > article{
+    background-color: lightgray;
+    margin: 10px;
+    
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+main{
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px 0px;
+}
+
+/* div#bola {
+height: 100px;
+width: 100px;
+background-color: white;
+border-radius: 50%;
+}
+*/
+</style>
+
+</head>
+<body>
+     <header>
+        <h1 id="titulo">Meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Noticias</h1>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore recusandae dolorem veniam autem praesentium eius aliquid! Nemo dolor magnam distinctio velit odit, delectus suscipit, porro necessitatibus aut, voluptate ex eum?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, rerum? Autem tempora illo iusto dignissimos sit quia, maxime eveniet delectus? Iusto cupiditate totam nam harum beatae delectus numquam, praesentium nihil?</p>
+
+                     <aside>
+                        <p>feito por Henry Peres</p>
+                    </aside>    
+            </article>
+           
+        </section>
+         <footer>
+                <p>Desenvolvido por Henry Peres</p>
+            </footer>
+        </main>
+     <div id="bola">  </div>
+</body>
+</html>

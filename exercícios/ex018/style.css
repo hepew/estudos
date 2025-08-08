@@ -1,0 +1,37 @@
+
+        
+       
+         /*
+         Medidas Absolutas
+         cm, mm, in (polegada), px, pt, pc
+
+         Medidas Relativas
+         em, ex, rem, vw, vh, 
+
+         as recomendações de se uar são (px ; em)
+         */
+        
+
+    body{
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+      
+         /*
+         16px é a Media padrão da fonte e 1em = 16px
+         */;
+    }
+
+
+     /*
+        font-weight (lighter normal bold bolder ou 100 - 900) 
+
+            weight = peso
+   font     width = largura
+            height = altura
+
+            shorthand font 
+
+            1 font-style -> 2 font-weight -> 3 font-size -> 4 font-family
+            (coloquei pelo style do html)
+         */;
+    

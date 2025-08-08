@@ -1,0 +1,959 @@
+ 			CURSO HTML5 e CSS3 
+
+	Aula(6) Cap.(1)
+
+		O nascimento da internet: Acontecu na guerra fria 
+		(estados unidos e união soviética)
+
+		Os EUA criou o DARPA, era um sitema de dados chamado ARPANET, (em 1969) eram 	
+		 computadores imensos mas não conseguiam se comunicar pois os computadores
+		 tinham linguagens diferentes. Por isso criaram o protocolo NCP (linguagem única
+		 que falavam o mesmo idioma). (1975) Começou aumentar a quantidade de computadores e não 
+		 podia usar o computador até uma pessoa parar de usar o computador.
+		Com isso, criaram o TCP/IP que é o protocolo que é usado até hoje (hoje em dia é melhor).
+
+		HTML -> Linguagem de Marcação para Hiper Textos
+		
+		WWW -> Rede de Alcanço Mundial
+	
+	Aula (7) Cap.(2)
+		
+	0 e 1 -> binary digit = (bit)
+	
+	 --> 01000001 = A
+	
+	   8 bits = 1byte  ->  Código multibyte -> (UTF-8) 
+						      |
+		1024 bytes -> 1KB 		      |> (Usado na línguagem HTML)
+		
+		1024 KB -> 1MB
+		 
+		1024 MB -> 1GB
+	
+		1024 GB -> 1TB
+
+		1024 TB -> 1PB
+	
+		1024 PB -> 1EB
+	
+		1024 EB -> 1ZP
+
+		1024 ZP -> 1YT...
+
+	    MB diferente de Mb
+	MB = MEGABYTES Mb = MEGABITS
+		
+	MB = Armazenamento 
+	
+	Mb = Transmissão
+
+
+	Aula (8) Cap.2
+
+	Domínio -> Nome que identifica o seu site
+
+	Hospedagem -> Local onde o site está armazenado
+	
+	
+		 _______________________________
+		|www.github.com/gustavoguanabara| -> URL ( localizador de recurso único)
+		|_______________________________|
+		 __________
+		|github.com| -> Domínio
+		|__________|
+		 ____
+		|.com| -> TLD 
+		|____|
+		 ___
+		|www| -> sub-domínio (principal) 
+		|___|
+		 _________________
+		|/gustavoguanabara| -> Caminho
+		|_________________|
+
+	Aula (9) Cap.3
+
+	HTML e CSS não é linguagem de programação; são linguagens de desenvolvimento
+	
+	HTML -> HYPERTEXT MARKUP LANGUAGE (Linguagem de marcação para hipertextos)
+		-> Conteúdo (textos; imagens; videos; tabelas..)
+	
+
+	CSS -> CASCADING STYLE SHEETS (folhas de estilo em cascata)
+		-> Desing (cores; sombras; tamanhos; posicionamento..)
+	
+	
+	Conteúdo HTML
+	
+	<h1> Exemplo de título </h1> 
+	<p> Exemplo de parágrafo <\p> w
+	<img scr="foto.png" alt="exemplo de foto">
+
+	Conteúdo CSS
+					|> declaração
+		Seletor -> h1{		|
+				font-family: Arial;
+				font-size: 20pt;
+				color: blue; --> Valor
+		             }   |
+			         |> propriedade		
+
+		Estrutura documento HTML
+	
+		<!D0CTYPE html>
+		<html lang="pt-br">
+		 <head>
+			<meta charset="UTF-8">
+			<meta name="viewport"
+			content="width=device-width,
+			initial-scale=1.0">
+			<tittle>Document</tittle>
+		 </head>
+		 <body>
+	 	 </body>
+		 </html>
+
+-------------------------------------------------------------------------------------------------------------------------
+		
+	CONTEÚDO DAS AULAS
+
+
+
+
+
+
+
+ex001
+	
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro exercício</title>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <hr>
+    <p>Hello World</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a vel repudiandae, quas ipsam distinctio quod possimus ad sint. Rem, quasi eum beatae repudiandae at earum quaerat vitae facilis explicabo?</p>
+</body>
+</html>
+
+////////////////////////////////////////////////////////////////////////
+
+ex002
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parágrafos</title>
+</head>
+<body>
+    <h1>parágrafos e quebras de linha</h1>
+    <hr>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere iste sunt dolores <br> praesentium temporibus minima! Accusantium non voluptates vero nihil voluptatem cumque possimus sit repudiandae dolorum? &lt;p&gt;Porro, earum incidunt? Aperiam? <!--&lt; Less than / Greater than-->
+    </p>
+    <p>Lorem ipsum dolor <br> sit amet consectetur <br>
+         adipisicing elit. Ipsum corrupti <br> illo odit, quod quia esse?<br> Eius vero amet aut illo veritatis molestiae maxime! Animi tempora hic, modi <br> natus sint at! </p>
+         &lt;br&gt;
+
+         <p>SIMBOLOS ESPECIAIS</p>
+         &reg;  <!--Marca registrada-->
+         &copy;  <!--Copyright-->
+         &trade;
+         &euro;
+         &pound;
+         &yen;
+         &cent;
+         &delta;
+         &Delta;
+         &uparrow;
+         &downarrow;
+         &leftrightarrow;
+         &leftarrow;
+         &rightarrow;
+         <p>EMOJIS</p>
+         <p>  &#x1F596;
+             &#x1F62A;
+             &#x1F44C;
+         </p> <!--Não Adicionar U+-->
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus odio architecto doloribus impedit modi maxime tempora mollitia! Odio provident, similique accusantium sit maxime neque impedit dolores ut assumenda quam.</p>
+       
+
+</body>
+</html>
+//////////////////////////////////////////////////////////////
+
+ex003
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com imagens</title>
+</head>
+<body>
+    <h1>Testando imagens</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatum iste minima ipsa consectetur temporibus repudiandae illo vitae cupiditate ducimus voluptate quod, nulla sunt! Tempore, placeat iusto. Aperiam, id ut.
+    </p>
+    <img src="html200.png" alt="logo HTML5">
+    <h2>Imagens em subpastas</h2>
+    <img src="imagens/css200x.png" alt="">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem adipisci tempore, mollitia iusto ullam neque voluptatem dolores. Odio aliquid officiis nihil amet soluta cum perspiciatis. Culpa minima ab vero inventore.</p>
+    <h2>Imagens em links externos</h2>
+    <img src="https://logospng.org/wp-content/uploads/javascript.png" alt="logo js"> <!--Reduzir a imagem primeiro-->
+
+
+</body>
+</html>
+/////////////////////////////////////////////////////////////////////////////
+
+ex004
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="logo lego.ico" type="image/x-icon">
+    <title>Document</title> 
+</head>
+<body>
+    <h1>FAVICON</h1> <!--link favicon-->
+    <h2>Está em cima!</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum alias culpa odio ipsam aperiam, harum consectetur excepturi eius, rem nulla esse optio quisquam in, laborum cupiditate recusandae ex iste dolorum.</p>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident nam dicta voluptatum amet pariatur tenetur atque soluta incidunt, laudantium porro eaque. Itaque, necessitatibus molestiae veritatis exercitationem dolores soluta ratione laborum?</p>
+
+</body>
+</html>
+////////////////////////////////////////////////////////////////////////////////////////
+
+ex007
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formatações de textos</title>
+</head>
+<body>
+
+<h1>Negrito</h1>
+    <p>Usasse <strong>STRONG</strong></p>
+    <p>Um <strong>Jogo</strong> de <strong>Pega-Pega</strong> foi recriado em <strong>1967</strong>.</p>
+
+<h1>Itálico</h1>
+    Usasse <em>EM</em>
+    <p>Um <em>jogo</em> de <em>Pega-Pega</em> foi recriado em <em>1967</em>.</p>
+   
+<h1>Marcação</h1>
+    Usasse <MARK>MARK</MARK>
+
+<h1>Texto Pequeno</h1>
+    <p>Usasse <Small>SMALL</Small></p>
+    <p>Um <small>Jogo</small> de <small>Pega-Pega</small> foi recriado em <small>1967</small>.</p>
+
+<h1>Texto excluído</h1>
+    <p>Usasse <DEL>DEL</DEL></p>
+    <p>Um <del>jogo</del> de <dek>futebol</dek></p>
+
+<h1>Texto inserido</h1>
+    <p>Usasse <ins>INS</ins></p>
+    <p>Um <ins>jogo</ins> de <ins>futebol</ins></p>
+
+<h1>Texto sobrescrito</h1>
+    <p>Usasse <sup>SUP</sup></p>
+    <p>2x<sup>20</sup>+3</p>
+
+<h1>Texto subscrito</h1>
+    <p>Usasse <sub>SUB</sub></p>
+    <p>H<sub>2</sub>O</p>
+
+</body>
+</html>
+//////////////////////////////////////////////////////////////	
+
+ex008
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Codigo-Fonte</h1>
+          <p>O comando <code>document.getElementsById('Teste')</code> é escrito em linguagem JavaScript</p>
+<hr>
+          <pre>
+            <code>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque architecto
+            fugit numquam, reprehenderit illum illo mollitia voluptas quasi itaque[
+            ] temporibus suscipit fugiat voluptates dolorem, repellendus veniam.
+            Suscipit earum error nesciunt!
+    </p>
+        
+        <!--O código <pre> é usado meio pra comando mais específicos-->
+            </code>
+          </pre>
+<hr>
+          <h1>Citações simples</h1>
+        <p>Como diria um autor: <q>o computador é um burro muito rápido.</q></p>
+        
+        <!--A tag <q> é usada para citações de coisas, o uso das "aspas" é usado para citaçoes de "meio termo"-->
+
+            <h1>Citações completas</h1>
+            <p>Segundo George Orwell, no seu livro 1984:</p>
+            <blockquote cite="https://www.google.com.br/books/edition/1984/JAgVEAAAQBAJ?hl=pt-BR&gbpv=1">
+
+                <!--O site a cima é um auxiliar para os direitos de uso e citações, não é visualizado em nada, apenas no algorítimo de HTML-->
+                
+                Não restava nada de sua infância, exeto uma série de cenários ofuscantes sem nada no fundo e em sua maioria incompreensíveis.
+
+            <!--A tag <blockquote>, é uma citação completa do autor, em que o conteúdo em sua obra não foi alterado-->
+            </blockquote>
+
+            <h1>Abreviações</h1>
+    Estou estudando <abbr title="HyperText Markup Language"> HTML </abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> estou adorando! 
+                            <!--É usado para citações passadas pelo mouse-->
+
+    <h1>Texto invertido</h1>
+        <p><bdo dir="rtl">Estou estudando HTML e CSS estou adorando!</bdo></p>
+                    <!--É usado inutilmente para inverter o texto. Apenas isso.-->
+                   
+                    <hr>
+</html>
+///////////////////////////////////////////////////////////////////////////
+
+ex009
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2>
+    <ol type="1" start="1"> 
+                            <!--
+        1= Números Padrão
+        A= Lista de A, B, C..
+        a= Lista de a, b, c..
+        I= Lista de I, II, III.. (Números romanos)
+        i= LIsta de i, ii, iii.. (Números romanos em minúsculas).
+        - O Start é definido em que número/letra começa (é inicado apenas com número da letra ex.5 = E, 1 = A..)
+                           *A tag <li> é necessária*
+                             -->
+
+        <li>Acordar</li>
+        <li>Fazer pão</li>
+        <li>Jogar futebol</li>
+        <li>Dormir</li>
+
+    </ol>
+    
+    <h2>Listas não ordenadas</h2>
+    <ul type="Disc">
+                        <!--
+        Aplica-sen as regras..
+        -Disc - Padrão (bolinha)
+        -Circle - (Circulo)
+        -Square - (Quadrado)
+                        *A tag <li> é necessária*
+                            -->
+
+                            <li>Tomar café </li>
+                            <li>Fazer pão</li>
+                            <li>Jogar futebol</li>
+                            <li>Dormir</li>
+    </ul>
+
+    <h1>Listas misturadas</h1>
+
+    <ol type="I">
+        <li>Jogos</li>
+        <ul type="Square">
+            <li>Minecraft</li>
+            <li>Fortnite</li>
+            <li>Terraria</li>
+            <li>Township</li>
+        </ol>
+        <ol type="I" start="2">
+        </ul>
+        <li>Animes</li>
+        <ul type="Square">
+            <li>One Piece</li>
+            <li>Dragon Ball</li>
+            <li>Jojo's Bizarre Adventure</li>
+        </ul>
+    </ol>
+</body>
+</html>
+
+/////////////////////////
+ex010
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+   <h1>Links Externos</h1>
+   <p><a href="https://www.youtube.com/@Canal_Kakob" target="_blank" rel="external">Meu vídeo do youtube</a></p>
+
+   <p>Use o site da <a href="https://www.ferrari.com/en-BR" target="_blank" rel="nofollow"> Ferrari</a> </p>
+   <!--a tag <target="_blank" serve para deixar a pagina inicial aberta e inicar a nova pagina em outra guia-->
+
+   <!--o <rel="eternal"> indica para o site html que será descrito o comando a cima-->
+
+   <!--o comando <nofollow> serve para o site reconhecer que tal link não está anexado com o site original, ex. Patrocínios-->
+    
+   <h1>Link Interno</h1>
+   acesse a <a href="pag002.html" rel="next">segunda Página</a>
+
+   <!--A tag <next> serve para indicar o site no html que a página terá uma próxima págima anexada-->
+
+    <!--A tag <prev> indica o site html que a página terá um link que volta para a página inicail do site anexada-->
+</body>
+</html>
+
+pg02
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 02</title>
+</head>
+<body>
+    <h1>Página 002</h1>
+    <p>aqui está a segunda página!</p>
+    <p>volta para a<a href="index.html" rel="prev"> primeira página</a></p>
+    <a href="index/pag003.html">
+        <p>Vá para a terceira página</p>
+    </a>
+</body>
+</html>
+
+pg03
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Esta é a pag003</h1>
+    <p>volte para a <a href="../index.html">primeira pagina</a></p>
+</body>
+</html>
+
+
+pg04
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads</title>
+</head>
+<body>
+    <h1>Acesse aqui!!</h1>
+
+    <p><a href="../dowload/arquivo.zip" download="arquivo.zip" type="application/zip">O arquivo zip </a></p>
+</body>
+</html>
+
+
+///////////////////////////////////////////////////////////
+
+Desafios 05 ; 06 e 09 ( o desafio 9 foi feito depois desses conteúdo +/- no ex012 pra cima)
+
+/////////////
+05 
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="Gartoon-Team-Gartoon-Action-Help-about-star-fav.512.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>Desafio 5</title>
+</head>
+<body>
+    <h1>Minhas Redes Sociais!</h1>
+    <h2>Quem sou eu?</h2>
+    <img src="DALL·E 2025-02-01 22.58.08 - A circular logo featuring a stylized anime boy in black and white. The design is high-contrast, using only black and white with sharp, clean lines. Th.webp" alt="foto de perfil">
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam inventore molestias aspernatur accusamus doloremque ex, excepturi, possimus repellat beatae corrupti earum ab eaque accusantium expedita? Ducimus sapiente eaque officiis porro? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt porro dolor ducimus blanditiis, aliquam laudantium velit! Harum voluptate incidunt quos veniam iste assumenda deleniti, sint debitis doloremque libero nulla adipisci! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio numquam voluptatibus inventore eveniet unde, beatae, porro quibusdam eius alias quos velit possimus debitis atque similique, minus sint autem tenetur cumque.</p>
+    <h2>Me siga nas redes sociais!</h2>
+    <hr>
+
+
+    <ul>
+    
+        <li>
+            <p><img src="icone-youtube.png" alt="Foto Youtube"> <a href="https://www.youtube.com/" target="_blank">Acesse aqui o canal do Youtube!!</a></p> 
+        </li>
+        
+                <li>
+                <p>
+                    <img src="icone-github.png" alt=""> <a href="https://github.com/" target="_blank"> Acesse aqui o Github!</a></li>
+                </p>
+                </li>
+        
+            <li>
+                <p><img src="icone-instagram.png" alt=""> <a href="https://www.instagram.com/" target="_blank">Acesse oaqui o Instagram!</a></p> 
+            </li>
+            <li>
+                <p><img src="icone-facebook.png" alt=""><a href="https://www.facebook.com/?locale=pt_BR" target="_blank"> Acesse o meu Facebook!<a></p> </li>
+<hr>
+</ul>
+</body>
+</html>
+
+///////////////////
+06
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 06</title>
+</head>
+<body>
+    <h1>Tags</h1>
+    <h2>Escrevendo 8 tags</h2>
+
+    <ul type="Square">
+<li><p><abbr title="Its a not Rules lol">Rules</abbr></p></li>
+<li><p><abbr title="Fisical exercise">Calistenics</abbr></p></li>
+<li><p><abbr title="My rules bro">Ruels lol</abbr></p></li>
+<li><p><abbr title="Abreviação">Abbr</abbr></p></li>
+<li><p><abbr title="Quebra de linha">BR</abbr></li>
+<li><p><abbr title="Linha horizontal">HR</abbr></p></li>
+<li><p><abbr title="SAIAM DO MEU QUARTO">Você é chato?</abbr></p></li>
+<li><p><abbr title="BOMBA PATCH VIROU MODA E TODO MUNDO QUER JOGAA">Futebol de PS2?</abbr></p></li>
+</p>
+    </ul>
+<hr>
+
+</body>
+</html>
+ 
+///////////////////////////////////////////////////////
+		Desafio 09 
+
+pg (central)
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assista esses vídeos</title>
+</head>
+<body>
+    <h1>Vídeos legais para assistir!</h1>
+   
+    <a href="pg1.html"><img src="imagens/paisagem-natural-og.webp" alt="" width="450"></a>
+    <a href="pg2.html"><img src="imagens/paisagem-de-nevoeiro-matinal-e-montanhas-com-baloes-de-ar-quente-ao-nascer-do-sol_335224-794.avif" alt="" width="450"></a> <br>
+    <a href="pg3.html"><img src="imagens/6326651-tropical-praia-sundown-horizonte-paisagem-vetor.jpg" width="450"></a>
+    <a href="pg4.html"><img src="imagens/images.jpeg" alt="" width="450"></a>
+</body>
+</html>
+
+pg (01)
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assista esse vídeo</title>
+</head>
+<body>
+    <h1>Assista o vídeo!😜</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1tjuhCdWPB4?si=RK30SpuFJa8i263g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h2>Assista o conteúdo completo!</h2>
+
+<p><a href="https://www.youtube.com/watch?v=1tjuhCdWPB4&list=PL4bkoEjjgOo1bXr29WolooAa_DTr3wW1a" target="_blank">Veja a playlist</a></p>
+
+    <a href="central.html"><img src="imagens/Ionic-Ionicons-Arrow-back-circle-outline.512.png" rel="prev" width="50" alt="imagem"></a>
+</html>
+
+
+pg (02)
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assiste o vídeo!</title>
+</head>
+<body>
+    <h1>
+            Assista o vídeo!🤫                      
+    </h1>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WcaFKRPK0hs?si=5btU6_bMRV0SWyGN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>
+
+        <h2>Assista o conteúdo completo!</h2>
+
+<p><a href="https://www.youtube.com/watch?v=1tjuhCdWPB4&list=PL4bkoEjjgOo1bXr29WolooAa_DTr3wW1a" target="_blank">Veja a playlist</a></p>
+
+    <a href="central.html"><img src="imagens/Ionic-Ionicons-Arrow-back-circle-outline.512.png" width="50" alt="imagem"></a>
+</body>
+</html>
+
+
+pg03
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assista o vídeo!</title>
+</head>
+<body>
+    <h2>Assista o vídeo!🤩</h2>
+
+       
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vgglnOokboo?si=5UiGsJHA_RzHMXSP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     <h2>Assista o conteúdo completo!</h2>
+<p><a href="https://www.youtube.com/watch?v=1tjuhCdWPB4&list=PL4bkoEjjgOo1bXr29WolooAa_DTr3wW1a" target="_blank">Veja a playlist</a></p>
+
+    <a href="central.html"><img src="imagens/Ionic-Ionicons-Arrow-back-circle-outline.512.png" width="50" alt="imagem"></a>
+    
+  
+</body>
+</html>
+
+
+pg04
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assista o vídeo!</title>
+</head>
+<body>
+    <h2>Assista o vídeo!😎</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/69yDjsVm9rM?si=sbfsztBmWiP-vug0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+  <h2>Assista o conteúdo completo!</h2>
+
+<p><a href="https://www.youtube.com/watch?v=1tjuhCdWPB4&list=PL4bkoEjjgOo1bXr29WolooAa_DTr3wW1a" target="_blank">Veja a playlist</a></p>
+
+    <a href="central.html"><img src="imagens/Ionic-Ionicons-Arrow-back-circle-outline.512.png" width="50" alt="imagem"></a>
+
+				<h2>FIM DOS DESAFIOS 05,06 e 09</h2>
+</body>
+</html>
+			
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+					
+
+
+ex011
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas ex011</h1>
+
+    <picture>
+        <!--Usar do menor para o maior ex. Imagem (P) para a Imagem (G)-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+       <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+</body>
+</html>
+
+///////////////////////////////////////////
+
+ex012
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+                <h1>Vídeos em hmtl</h1>
+
+    <video width="560" controls poster="midia/wallhaven-yxj7ex.png">
+                <source src="midia/meu-video.mp4.mp4" type="video/mp4">
+                <source src="midia/Meu-Video.Mp4.webm" type="video/webm">
+
+                <p>Vìdeos não podem ser acessados em seu navegador.</p>
+    </video>
+
+        <h2>Este vídeo foi hospedado no meu próprio servidor</h2>
+
+        <h1>Vídeos hospedados no youtube</h1>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1tjuhCdWPB4?si=Di2yZZ_RCaPhhTEI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe  width="560" height="315" src="https://www.youtube.com/embed/WcaFKRPK0hs?list=PL4bkoEjjgOo1bXr29WolooAa_DTr3wW1a" title="[Grátis] Fontes de Energia - Vídeos Gratuitos | Sem Copyright | Creative Commons" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+
+
+</body>
+</html>
+
+////////////////////////////////////////////////////////////////////////
+
+ex013
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Css Inline</h1>
+
+    <h1 style="font-family: Arial, Helvetica, sans-serif; color: rgb(11, 11, 117); background-color: aquamarine;">Página 01</h1>
+
+    <h2 style="background-color: blueviolet; font-family: 'Times New Roman', Times, serif; font-size: 30pt;">Página 1.1</h2>
+    <p style="font-size: large;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum illum doloribus minus quibusdam cumque, ut exercitationem fugit culpa ullam accusantium debitis iusto repellat est dolorem, nisi odio explicabo consectetur harum.</p>
+
+    <h2 style="background-color: chocolate; font-size: 25pt;">Página 1.2</h2>
+
+    <p style="font-family: Arial, Helvetica, sans-serif; font-style:italic;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, minima sunt deleniti, beatae hic qui optio accusamus ab tempora, voluptatum nesciunt sit praesentium numquam omnis natus distinctio ad ipsam autem!</p>
+
+<!--Esse tipo não é usado por conta de ser completamente inviavel de fazer num site, ele é o css de forma com que se "agrupe" com o Html mas n está correto-->
+</body>
+</html>
+
+/////////////////////////////////////////////////
+
+ex014
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+                 body{
+                         background-color: beige;
+                         font-family: Arial, Helvetica, sans-serif;
+                        color: blueviolet;
+                        font-size: 12.5pt;
+                     }
+
+                                            h1{
+                                                background-color: rgb(163, 184, 142);
+                                                font-style:oblique;
+                                            }
+
+                                                        h2{
+                                                            background-color: rgb(255, 188, 252);
+                                                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                                        }
+                                                       
+                                                        p{
+                                                            font-size: 1.4em;
+                                                        }
+ </style>
+
+
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Css Internal</h1>
+
+    <h1>Página 01</h1>
+<hr>
+    <h2>Página 1.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum illum doloribus minus quibusdam cumque, ut exercitationem fugit culpa ullam accusantium debitis iusto repellat est dolorem, nisi odio explicabo consectetur harum.</p>
+
+    <h2>Página 1.2</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, minima sunt deleniti, beatae hic qui optio accusamus ab tempora, voluptatum nesciunt sit praesentium numquam omnis natus distinctio ad ipsam autem!</p>
+<hr>
+
+<!--Agora sim, esse é o tipo certo mas não o melhor, tem uma maneira melhor de se fazer isto!-->
+
+</body>
+</html>
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+ex015
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+                <link rel="stylesheet" href="style.css">
+
+
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Css Internal</h1>
+
+    <h1 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >Página 01</h1>
+<hr>
+    <h2>Página 1.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum illum doloribus minus quibusdam cumque, ut exercitationem fugit culpa ullam accusantium debitis iusto repellat est dolorem, nisi odio explicabo consectetur harum.</p>
+
+    <h2>Página 1.2</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, minima sunt deleniti, beatae hic qui optio accusamus ab tempora, voluptatum nesciunt sit praesentium numquam omnis natus distinctio ad ipsam autem!</p>
+<hr>
+
+<!--Este jeito de se usar o CSS em segunda página é o essencial e o melhor jeito, podemos também usar os outros meios de css junto também!-->
+
+
+<p><a href="pagina02.html">Próxima página!</a></p>
+
+</body>
+</html>
+
+
+pg02
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                 <link rel="stylesheet" href="style.css">
+
+    <title>Página 02</title>
+</head>
+<body>
+    <h1>Bem vindo á página 02!</h1>
+    <h2>Seja Bem-Vindo!</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta minima nobis eius nisi, necessitatibus maiores! Excepturi ratione sunt in, impedit exercitationem est ullam, odit eius ducimus ipsum reprehenderit accusantium quasi.</p>
+
+    <p style="text-align: right;"><a href="index.html">Volte para a página 01!</a></p>
+
+    <hr>
+</body>
+</html>
+
+
+
+conteúdo css
+
+
+
+@charset "UTF-8";
+
+body{
+                         background-color: beige;
+                         font-family: Arial, Helvetica, sans-serif;
+                        color: blueviolet;
+                        font-size: 12.5pt;
+                        text-align: justify;
+                     }
+
+                                            h1{
+                                                background-color: rgb(163, 184, 142);
+                                                font-style:oblique;
+                                            }
+
+                                                        h2{
+                                                            background-color: rgb(255, 188, 252);
+                                                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                                        }
+                                                       
+                                                        p{
+                                                            font-size: 1.4em;
+                                                        
+                                                        }
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+						FIM DO MÓDULO (1)
+

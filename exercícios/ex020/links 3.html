@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-elements
+            > = children (filho)
+        */
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        a{
+            color: rgb(0, 255, 136);
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: rgb(255, 0, 0);
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color:blue
+        }
+
+
+        .especial::before{
+            content: '✿';
+        }
+
+        .especial::after{
+            content: '♕';
+            text-decoration: none;
+            font-weight: normal;
+            color: rgb(0, 0, 0);
+        }
+
+        .especial{
+            color: blueviolet;
+        }
+
+        a::before{
+            content: '♝';
+            ;
+        }
+        a::after{
+            content: '♞	';
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtbe.com" target="_blank" class="especial">Youtube</a></li>
+        <li><a href="https://reddit.com" target="_blank">Reddit</a></li>
+        <li><a href="https://github.com"target="_blank">GitHub</a></li>
+    </ul>
+</body>
+</html>

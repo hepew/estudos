@@ -1,0 +1,20 @@
+
+        h1{
+            background-color:#DDA77B;
+            color: white;
+            font-family:'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 4em;
+            font-weight:lighter;
+            font-style: oblique;
+         
+        }
+
+    body{
+        background-color: #EA8C55;
+        color: white;
+    }
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        font-weight: bolder;
+    }
